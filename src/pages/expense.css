@@ -38,7 +38,7 @@
     border: 1px solid #28a745;
 }
 .expensebtns{
-    width: 47%;
+    width: 57%;
     display: flex;
     justify-content: space-between;
 }
@@ -140,7 +140,16 @@ input.expenseForm:active{
     text-align: center;
     text-transform: capitalize;
 }
+
+@media (max-width: 1024px) {
+    .Expense{
+        width: 90vw;
+    }
+}
 @media (max-width: 768px) {
+    .Expense{
+        width: 70vw;
+    }
     .expense-row, .expenserow2{
         flex-direction: column;
         width: 100%;
@@ -162,7 +171,8 @@ input.expenseForm:active{
 
 @media (max-width: 425px) {
     .Expense{
-        width: 75vw;
+        width: 85vw;
+        margin-left: 1em;
     }
     .expenseInput, .expenseInput2{
         width: 100%;
@@ -171,7 +181,9 @@ input.expenseForm:active{
 
 @media (max-width: 320px) {
     .Expense{
-        width: 95%;
+        width: 94%;
+        margin-left: 0;
+        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -182,7 +194,7 @@ input.expenseForm:active{
         margin: 0;
     }
     .expensebtns{
-        width: 77%;
+        width: 70%;
     }
     h4{
         font-size: 16px;
