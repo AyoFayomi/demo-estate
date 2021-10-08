@@ -36,7 +36,7 @@
     border-radius: .5em;
     font-size: 16px;
 }
-#message{resize: vertical;}
+#message{resize: vertical; padding-top: 1em;}
 .form-btn{align-self: flex-end;}
 
 @media (max-width: 1024px) {
