@@ -1,10 +1,6 @@
 import  './expense.css'
 
 const ExpenseTracker = () => {
-    state = {
-        income: [],
-        currentIncome: ""
-      };
     return (
         <div className="Expense">
             <h3>Welcome, Let's help you track your expenses</h3>
@@ -53,7 +49,7 @@ const ExpenseTracker = () => {
             <div className="expenserow2">
                 <div className="expenseInput2">
                     <h5>Please Enter Your Expense Title</h5>
-                    <form><input type="text" name="Expense Title" className="expenseForm expense-title" id="ExpenseTitle" value={this.state.currentIncome} placeholder="Enter Expense Title"/></form>
+                    <form><input type="text" name="Expense Title" className="expenseForm expense-title" id="ExpenseTitle" placeholder="Enter Expense Title"/></form>
                     <h5>Please Enter Your Expense Amount</h5>
                     <form action="Post">
                         <input type="number" name="Expense" className="expenseForm expens-num" id="expense" placeholder="Enter Expense Amount"/>
