@@ -1,0 +1,148 @@
+a{
+    text-decoration: none;
+    color: #000;
+}
+.navBar{
+    width: 100vw;
+    background-color: rgb(232, 240, 228);
+    position: fixed;
+    z-index: 100;
+}
+.navWrap{
+    width: 65%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navigation{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-img{width: 5em;}
+.nav-img img{
+    height: 100%;
+    width: 100%;
+}
+.navbtnswrap{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.reg{
+    width: 70%;
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart{
+    padding: .8em;
+    background-color: #fff;
+    color: rgb(253, 196, 55);
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px rgb(181, 181, 181)
+}
+.cart:hover{
+    background-color: rgb(253, 196, 55);
+    color: #fff;
+}
+.navBtn{
+    width: 7em;
+    padding: .9em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: rgb(22, 22, 24);
+    background-color: #fff;
+    box-shadow: .5px .5px .5px rgb(157, 157, 157);
+    transition: .8s ease;
+}
+.navBtn:hover{
+    color: #fff;
+    background-color: #000;
+
+}
+.hamburger-react{
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+@media (max-width: 1024px) {
+    .navWrap{
+        width: 86%;
+    }
+    div.reg{
+        width: 70%;
+    }
+}
+.sideNav{
+    display: none
+}
+@media (max-width: 770px) {
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 768px) {
+    .navWrap{
+        width: 90%;
+        justify-content: space-between;
+    }
+   .navigation, .reg{
+       flex-direction: column;
+       display: none;
+   }
+   div.reg{
+       display: none;
+   }
+   .hamburger-react{
+       display: block;
+       cursor: pointer;
+   }
+   .sideNav{
+        width: 100vw;
+        height: 60vh;
+        background-color: rgb(232, 240, 228);
+        position: fixed;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4em;
+        justify-content: space-between;
+        transition: 0.3s;
+        z-index: 1;
+        opacity: .9;
+        font-weight: 500;
+    }
+    .active{
+        left: 0;
+    }
+    .sideNav > .navigation {
+        width: 55%;
+        font-size: 1.4em;
+        height: 45%;
+        margin: auto;
+        display: flex;
+   }
+   .sideNav > .reg{
+       width: 40%;
+       font-size: 1.5em;
+       height: 30%;
+       display: flex;
+       margin: auto;
+   }
+}

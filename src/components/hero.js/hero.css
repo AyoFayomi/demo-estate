@@ -1,0 +1,129 @@
+.hero{
+    width: 100vw;
+    height: 52em;
+    background-image: url(./hero.jpg);
+}
+.hero-bg{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(55, 100, 88, 0.7), rgba(255, 255, 255, 0));
+}
+.hero-container{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.txt-left{
+    width: 36%;
+}
+.txt-left h1{
+    color: rgb(253, 196, 55);
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: .5px 0px 8px #000;
+    text-transform: capitalize;   
+}
+.txt-left p{
+    color: #fff;
+}
+.hero-btns{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    width: 12em;
+    height: 3em;
+    border: none;
+    border-radius: .3em;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .2s ease;
+}
+.herobtn1{
+    background-color: rgb(253, 196, 55);
+}
+.herobtn1:hover{
+    background-color: #000;
+    color: rgb(253, 196, 55);
+}
+.herobtn2:hover{
+    background-color: #000;
+    color: #fff;;
+}
+.txt-right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.blueBox{
+    background-color: rgb(7, 9, 58);
+    width: 35%;
+    height: 35%;
+    margin: auto;
+    margin-top: 15em;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 2em 5em;
+}
+.eclipse{
+    width: 204px;
+    height: 204px;
+    box-sizing: border-box;
+    border-width: 20px;
+    border-style: solid;
+    border-color: rgba(196, 196, 196, 0.4);
+    border-image: initial;
+    border-radius: 100%;
+    position: relative;
+    top: -12em;
+    left: 9em;
+}
+@media (max-width: 1024px) {
+   .hero{
+       width: 100vw;
+   }
+   .txt-right{
+       display: none;
+   }
+   .txt-left{
+       width: 90%;
+       margin: auto;
+       justify-content: center;
+   }
+}
+
+@media (max-width: 425px) {
+    .hero-container{
+        width: 100%;
+    }
+    .txt-left{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-btns{
+        width: 93%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    .hero-btns{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .herobtn1, .herobtn2{
+        margin: 1em 0;
+    }
+}

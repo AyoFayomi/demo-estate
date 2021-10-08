@@ -1,0 +1,127 @@
+footer{
+    width: 100vw;
+}
+.footer-top{
+    width: 100%;
+    background: linear-gradient(180deg, #161618, #000);
+    color: #fff;
+    padding: 30px 0;
+    border: none;
+}
+.foot-sec{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.foot-sec > div{
+    width: 90%;
+}
+.address {
+    width: 40%;
+    line-height: 2em;
+}
+.address > div{
+    line-height: .3em;
+}
+.address >img{
+    width: 10em;
+    height: 8em;
+}
+.addr-list{
+    display: flex;
+}
+.addr-list li{
+    list-style: none;
+    margin-right: 1em;
+}
+.addr-list li i, .addrIcon{
+    color: rgb(253, 196, 55);
+}
+.footer-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.find-prop{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.find-prop> a{
+    color: #fff;
+    margin-top: 1em;
+}
+.find-prop> a:hover{
+    color: #4e917e;
+}
+.form-sub{
+    margin-top: 2em;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.form-sub label{
+    font-size: 18px;
+}
+.form-sub form{
+    margin-top: 1em;
+}
+#email-sub{
+    height: 4.6em;
+    width: 23.5em;
+    padding-left: 1em;
+    background-color: #1d2523;
+    margin-right: -.7em;
+    border-radius: .4em;
+    border: none;
+}
+.footer-btn{
+    height: 5em;
+    width: 7em;
+    color: #fdc437;
+    background-color: #4e917e;
+    border: 3px solid #4e917e;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.footer-btn:hover{
+    background-color: #fdc437;
+    color: #4e917e;
+
+}
+.copy{
+    width: 95.8vw;
+    text-align: center;
+    font-size: 22px;
+    padding: 1em;
+}
+
+@media (max-width: 1024px) {
+    .foot-sec{flex-direction: column;}
+    .footer-links{flex-direction: column;}
+    .find-prop{
+        margin-top: 2em;
+        width: 50%;
+    }
+    .form-sub{ float: right;}
+}
+
+@media (max-width: 425px) {
+    #email-sub{
+        width: 65%;
+    }
+        
+    .form-sub form{
+        width: 120%;
+        display: flex;
+    }
+    .footer-btn{
+        width: 6em;
+    }
+    .copy{
+        width: 92vw;
+        font-size: 14px;
+    }
+}   

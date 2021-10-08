@@ -1,0 +1,111 @@
+.store{
+    width: 99vw;
+}
+.store-search, .storefilter > select#filter{
+    background-color: #e8f0e4;
+    color: #495057;
+}
+button.store-search-btn{
+    color: #000;
+}
+.cathead{
+    margin-left: 10em;
+    margin-top: 4em;
+    margin-bottom: -3em;
+    font-size: 22px;
+    font-weight: 500;
+    color: #28a745;
+}
+.cat-1, .cat-2{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em 1em;
+    padding: 3em;
+}
+.cat-1{
+    border-bottom: 2px solid #e8f0e4;
+}   
+.cement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+    border: 1px solid #f4f4f4;
+    margin-top: 4em;
+    box-shadow: 0 4px 4px #e8f0e4;
+    transition: .4s ease;
+}
+.cem-p{
+    color: rgb(253, 196, 55);
+}
+.store-price{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -.2em;
+    transition: .4s ease;
+}
+.cement-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.cementbtn{
+    width: 50%;
+    transition: .4s ease;
+    display: none;
+}
+.cement:hover > .cement-txt > .cement-btn > .cementbtn{
+    cursor: pointer;
+    display: block;
+}
+.cement:hover > .cement-txt > .cement-btn > .store-price{
+    font-weight: 700;
+}
+.cement:hover{
+    box-shadow: 
+    rgba(0, 0, 0, 0.25) 0px 1px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -2px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 1px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 2px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -1px 5px;
+}
+
+@media (max-width: 1540px) {
+    .cat-1, .cat-2{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 1024px) {
+    .cathead{
+        margin-left: 1em;
+    }
+    .cat-1, .cat-2{
+        width: 85%;
+        margin: auto;
+        grid-gap: 1em .5em;
+    }
+}
+@media (max-width: 768px) {
+    .cat-1, .cat-2{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 425px) {
+    
+    .cat-1, .cat-2{
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: .7em;
+    }
+}
+
+@media (max-width: 375px) {
+    .cat-1, .cat-2{
+        width: 70%;
+        grid-row-gap: .3em;
+        grid-column-gap: 0;
+    }
+
+}

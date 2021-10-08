@@ -1,0 +1,47 @@
+.form-bg{
+    width: 100%;
+    background: linear-gradient(
+        180deg,hsla(0,0%,100%,.2),#161618), url(./form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10em;
+    
+}
+.group-form{
+    position: relative;
+    background-color: #fff;
+    width: 35%;
+    padding: 3em;
+    top: 3em;
+    margin-left: 13em;
+    text-align: center;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: .7em 0;
+    text-align: left;
+}
+.input-frm{
+    height: 4em;
+    padding:.8em 1em;
+    padding-top: 0;
+    margin: .4em .2em;
+    background-color: #e8f0e4;
+    border: none;
+    border-radius: .5em;
+    font-size: 16px;
+}
+#message{resize: vertical;}
+.form-btn{align-self: flex-end;}
+
+@media (max-width: 1024px) {
+    .group-form{
+        margin: auto;
+        width: 70%;
+    }
+}

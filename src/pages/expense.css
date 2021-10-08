@@ -1,0 +1,193 @@
+.Expense{
+    padding-top: 7em;
+    width: 60%;
+    margin: auto;
+}
+.Expense h3{
+    color: #17a2b8;
+    font-size: 30px;
+    font-weight: 100;
+}
+.Expense h1{
+    font-size: 38px;
+    text-transform:uppercase;
+    font-weight: 100;
+}
+.expense-row{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+.expenseInput{
+    width: 35%;
+    padding: .2em 1em;
+    border: 1px solid #28a745;
+    border-radius: .3em;
+}
+.expenseInput form, .expenseInput2 form{
+    display: flex;
+    flex-direction: column;
+}
+.expenseInput form input{
+    width: 90%;
+    height: 3em;
+    padding-left: .6em;
+    margin-bottom: .5em;
+    border-radius: .3em;
+    border: 1px solid #28a745;
+}
+.expensebtns{
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+}
+.expenseInput form button, .expenseInput2 form button{
+    margin: 1em 0;
+    background-color: transparent;
+    padding: .6em .7em;
+    font-size: 18px;
+    border-radius: .3em;
+    cursor: pointer;
+    font-weight: 10;
+    transition: .3s ease;
+}
+.expensebtn1{
+    border: 1px solid #28a745;
+    color: #28a745;
+}
+.expensebtn1:hover{
+    background-color: #28a745;
+    color: #fff;
+}
+.expensebtn2{
+    border: 1px solid #17a2b8;
+    color: #17a2b8;
+}
+.expensebtn2:hover{
+    color: #fff;
+    background-color: #17a2b8;
+}
+h5{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: .8em;
+}
+.expenseInput p{
+    font-size: 12px;
+}
+.expenseDisplay{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+h3.expenseicons{
+    font-size: 4em;
+    margin: -.2em;
+}.expenseicons{
+    color: #17a2b8;
+}
+h4{
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-top: -.05em;
+}
+.green-txt{
+    color: #28a745;
+}
+.red-txt{
+    color: #dc3545;
+}
+.expenserow2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.expenseInput2{
+    width: 35%;
+    padding: .2em 1em;
+    border: 1px solid #dc3545;
+    border-radius: .3em;
+}
+.expenseInput2 form input{
+    width: 90%;
+    height: 3.5em;
+    border: 1px solid #dc3545;
+    padding-left: .6em;
+    border-radius: .3em;
+}
+button.expensebtn3{
+    width: 10em;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+button.expensebtn3:hover{
+    background-color: #dc3545;
+    color: #fff;
+}
+input.expenseForm:active{
+    border: none;
+}
+.expenseLog{
+    width: 55%;
+}
+.log-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: capitalize;
+}
+@media (max-width: 768px) {
+    .expense-row, .expenserow2{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .expenseInput, .expenseInput2{
+        width: 100%;
+        margin: 1em 0;
+    }
+    
+    .expenseDisplay{
+        width: 100%;
+        margin: 1em;
+    }
+    .expenseLog{
+        width: 85%;
+    }
+}
+
+@media (max-width: 425px) {
+    .Expense{
+        width: 75vw;
+    }
+    .expenseInput, .expenseInput2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .Expense{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .expense-row, .expenserow2{
+        flex-direction: column;
+        width: 90%;
+        margin: 0;
+    }
+    .expensebtns{
+        width: 77%;
+    }
+    h4{
+        font-size: 16px;
+    }
+    .expenseicons, h3.expenseicons{
+        font-size: 3em;
+    }
+}

@@ -1,0 +1,249 @@
+.topListing{
+    width: 99..4vw;
+    padding-bottom: 5em;
+    background-color: #c1e5db;
+    
+}
+.topList-wrap{
+    width: 60%;
+    margin: auto;
+}
+.topList-header{
+    min-width: 101%;
+    display: flex;
+    justify-content: space-between;
+}
+.topList-header h3{
+    margin-top: 3.8em;
+}
+.topList-header form{
+    display: flex;
+    margin-top: 3em;
+}
+input.search{
+    box-shadow: rgba(78, 145, 126, 0.2) 0px 4px 10px; 
+    border: none;
+    height: 5.5em;
+    width: 45em;
+    padding: 1px 1px 1px 20px;
+    border-radius: 5px;
+}
+button.search-btn{
+    color: rgb(253, 196, 55);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    right: 2.8em;
+}
+#filter{
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(78, 145, 126, 0.2) 0px 4px 10px;
+    font-size: 1em;
+    height: 4.25em;
+    width: 11em;
+    padding-left: 40px;
+    background: #fff;
+    border-radius: 5px;
+    border-style: none;
+}
+.filter-btn{
+    position: relative;
+    right: 10em;
+}
+option{
+    font-weight: normal;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 3px 2px;
+}
+
+.lists{
+    width: 100%;
+    margin-top: 2em;
+}
+.listWrap{
+    background-color: #fff;
+    width: 100%;
+    height: 18em;
+    border-radius: .9em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+    box-shadow: 0 4px 4px #e8f0e4;
+    transition: .5s ease;
+}
+.listWrap:hover{
+    box-shadow: 
+    rgba(0, 0, 0, 0.25) 0px 4px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.listWrap img{
+    width: 35%;
+    height: 95%;
+    margin-left: .5em;
+    border-radius: .9em;
+}
+.list-txts{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.list-txt1, .list-txt2{
+    display: flex;
+    flex-direction: column;
+}
+.list-txt1{
+    width:50%;
+    justify-content: space-between;
+}
+.list-txt2{
+    width: 27%;
+}
+.list-txt1-title{
+    width: 100%;
+}
+.list-title, .list-title~p, .i-grey{
+    color: rgb(111, 111, 111);
+}
+.star{
+    color: rgb(253, 196, 55);
+    font-size: 13px;
+}
+.list-txt1-btn{
+    width: 70%;
+    height: 10em;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sched{
+    background-color: rgb(253, 196, 55);
+}
+.sched:hover{
+    background-color: #000;
+    color: rgb(253, 196, 55);
+}
+.text-tiny{
+    font-size: 13px;
+}
+.list-det{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.more-details{
+    font-size: 13px;
+    color: rgb(253, 196, 55);
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+
+@media (max-width: 1540px) {
+    .topList-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .topList-header h3{
+        align-self: flex-start;
+    }
+    .listWrap{
+        height: 18em;
+    }
+    .topList-wrap{
+        width: 70%;
+    }
+}
+@media (max-width: 1024px) {
+    .topList-wrap{
+        width: 95%;
+    }
+    .list-txt1{
+        width: 55%;
+    }
+}
+@media (max-width: 768px) {
+    .topList-header{
+        width: 90%;
+    }
+    input.search{
+        height: 5.5em;
+        width: 35em;
+        padding: 1px 1px 1px 20px;
+        border-radius: 5px;
+    }
+    
+    .listWrap{
+        width: 80%;
+        margin: 3em auto;
+        height: auto;
+        flex-direction: column;
+    } 
+    .listWrap img{
+        width: 97%;
+        height: 22em;
+        margin-top: .5em;
+        margin-left: 0;
+    }
+    .list-txts{
+        width: 90%;
+        flex-direction: column;
+    }
+    .list-txt1, .list-txt2{
+        width: 100%;
+        align-items: center;
+    }
+    .list-txt1-btn{
+        height:8em;
+        width: 45%;
+    }
+}
+@media (max-width: 425px) {
+    .topList-header{
+        width: 100%;
+        padding: 0;
+    }
+    input.search{
+        height: 5.5em;
+        width: 19em;
+        padding: 3px;
+        margin-right: -1em;
+    }
+    
+    #filter{   
+        width: 8em;
+        height: 5.7em;
+        padding-left: 1.9em;
+        font-size: .8em;
+    }
+        
+    .filter-btn{right: 6em;}
+}
+@media (max-width: 375px) {
+    input.search{width: 16em;}
+    
+    button.search-btn{ right: 1em;}
+    #filter{width: 7.5em;}
+    .filter-btn{right: 5.5em;}
+    .topList-wrap{width: 90%;}
+    .listWrap{width: 100%;}
+    .listWrap img{
+        width: 97%;
+        height: 15em;
+    }
+    .list-txt1-btn{
+        height:6em;
+        width: 75%;
+    }
+}
