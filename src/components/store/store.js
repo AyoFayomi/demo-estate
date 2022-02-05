@@ -1,7 +1,7 @@
 import './store.css';
 import Cementimg from './cement-img.jpg';
 
-const store = () => {
+const Store = () => {
     return (
         <div className="store">
             <div  className="topList-wrap store-wrap">
@@ -167,4 +167,4 @@ const store = () => {
     )
 }
 
-export default store
+export default Store
