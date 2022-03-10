@@ -2,7 +2,7 @@ import Hero from "../components/hero.js/hero";
 import TopListing from "../components/topListing/topListing";
 import Form from "../components/form/Form";
 import Footer from "../components/footer/Footer";
-import Store from "../components/store/Store";
+import Store from "../components/store/store";
 
 const main = () => {
   return (
