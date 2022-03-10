@@ -16,15 +16,13 @@ const ExpenseTracker = () => {
   const handleIncome = (e) => {
     e.preventDefault();
     setIncomeVal(parseInt(income) + incomeVal);
-    setBalance(
-      (parseInt(income) + incomeVal - expenseVal).toLocaleString("en-US")
-    );
+    setBalance(parseInt(income) + incomeVal - expenseVal);
     setIncome("");
   };
   const handleReset = () => {
     setIncome("");
     setIncomeVal(0);
-    setBalance(expenseVal >1 ? -expenseVal : 0);
+    setBalance(expenseVal > 0 ? -expenseVal : 0);
   };
   const handleExpense = (e, expenses) => {
     e.preventDefault();
@@ -43,7 +41,7 @@ const ExpenseTracker = () => {
   const handleExpenseDelete = (id, expenseListValue) => {
     setAddExpense(addExpense.filter((ex) => ex.id !== id));
     setExpenseVal(expenseVal - parseInt(expenseListValue));
-    setBalance(balance + parseInt(expenseListValue));
+    setBalance(parseInt(expenseListValue) + balance);
   };
   const handleExpenseEdit = (id, expenseListName, expenseListValue) => {
     setAddExpense(addExpense.filter((ex) => ex.id !== id));
