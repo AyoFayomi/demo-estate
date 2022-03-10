@@ -39,7 +39,7 @@ const ExpenseTracker = () => {
   const handleExpenseDelete = (id, expenseListValue) => {
     setAddExpense(addExpense.filter((ex) => ex.id !== id));
     setExpenseVal(expenseVal - parseInt(expenseListValue));
-    setBalance(balance - parseInt(expenseListValue));
+    setBalance(balance + parseInt(expenseListValue));
   };
   const handleExpenseEdit = (id, expenseListName, expenseListValue) => {
     setAddExpense(addExpense.filter((ex) => ex.id !== id));
