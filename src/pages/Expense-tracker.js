@@ -8,7 +8,7 @@ const ExpenseTracker = () => {
   const [incomeVal, setIncomeVal] = useState(0);
   const [expenseVal, setExpenseVal] = useState(0);
   const [expenseName, setExpenseName] = useState("");
-  const [addExpense, setAddExpense] = useState([  ]);
+  const [addExpense, setAddExpense] = useState([]);
   const incomeChange = (e) => setIncome(e.target.value);
   const expenseChange = (e) => setExpense(e.target.value);
   const expenseNameChange = (e) => setExpenseName(e.target.value);
@@ -16,21 +16,25 @@ const ExpenseTracker = () => {
   const handleIncome = (e) => {
     e.preventDefault();
     setIncomeVal(parseInt(income) + incomeVal);
-    setBalance((parseInt(income) + incomeVal - expenseVal).toLocaleString('en-US'));
+    setBalance(
+      (parseInt(income) + incomeVal - expenseVal).toLocaleString("en-US")
+    );
     setIncome("");
   };
   const handleReset = () => {
     setIncome("");
     setIncomeVal(0);
-    setBalance(-expenseVal);
+    setBalance(expenseVal >1 ? -expenseVal : 0);
   };
   const handleExpense = (e, expenses) => {
     e.preventDefault();
     setExpenseVal(parseInt(expense) + expenseVal);
     setBalance(incomeVal - (expenseVal + parseInt(expense)));
-    const newExpense = {  id:  Math.floor(Math.random() * 1000) + 1,
+    const newExpense = {
+      id: Math.floor(Math.random() * 1000) + 1,
       expenseListName: expenseName,
-      expenseListValue: expense,}
+      expenseListValue: expense,
+    };
     setAddExpense([...addExpense, newExpense]);
     setExpense("");
     setExpenseName("");
@@ -48,7 +52,12 @@ const ExpenseTracker = () => {
     setExpenseName(expenseListName);
     setExpense(parseInt(expenseListValue));
   };
-  const balanceColor = incomeVal > expenseVal ? "green-txt" : incomeVal < expenseVal ? "red-txt" : "black";
+  const balanceColor =
+    incomeVal > expenseVal
+      ? "green-txt"
+      : incomeVal < expenseVal
+      ? "red-txt"
+      : "black";
   return (
     <div className="Expense">
       <h3>Welcome, Let's help you track your expenses</h3>
@@ -89,7 +98,7 @@ const ExpenseTracker = () => {
             <div>
               <h4 className="green-txt">
                 &#8358;
-                <span> {incomeVal.toLocaleString('en-US')}</span>
+                <span> {incomeVal.toLocaleString("en-US")}</span>
               </h4>
             </div>
           </span>
@@ -99,7 +108,7 @@ const ExpenseTracker = () => {
             <div>
               <h4 className="red-txt">
                 &#8358;
-                <span> {expenseVal.toLocaleString('en-US')}</span>{" "}
+                <span> {expenseVal.toLocaleString("en-US")}</span>{" "}
               </h4>
             </div>
           </span>
@@ -109,7 +118,7 @@ const ExpenseTracker = () => {
             <div>
               <h4 className={`${balanceColor}`}>
                 &#8358;
-                <span> {balance.toLocaleString('en-US')}</span>
+                <span> {balance.toLocaleString("en-US")}</span>
               </h4>
             </div>
           </span>
